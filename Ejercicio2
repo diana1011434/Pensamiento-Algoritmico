@@ -1,26 +1,10 @@
-1. Cálculo de Promedio de Notas
-Descripción: Calcular el promedio de un conjunto de notas ingresadas por el usuario.
+Algoritmo Tablas
+	Definir numero Como Entero
+    Escribir "Ingrese un número para generar su tabla de multiplicar:"
+    Leer numero
+	
+    Para i Desde 1 Hasta 10 Hacer
+        Escribir numero, " * ", i, " = ", numero * i
+    Fin Para
 
-INICIO
-    Definir suma Como Real
-    Definir contador Como Entero
-    Definir nota Como Real
-    suma <- 0
-    contador <- 0
-    
-    Repetir
-        Escribir "Ingrese una nota (-1 para terminar):"
-        Leer nota
-        Si nota <> -1 Entonces
-            suma <- suma + nota
-            contador <- contador + 1
-        FinSi
-    Hasta que nota = -1
-    
-    Si contador > 0 Entonces
-        promedio <- suma / contador
-        Escribir "El promedio es: ", promedio
-    Sino
-        Escribir "No se ingresaron notas."
-    FinSi
-FIN
+FinAlgoritmo
