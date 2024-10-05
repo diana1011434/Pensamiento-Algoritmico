@@ -1,0 +1,14 @@
+Los algoritmos iterativos son aquellos que repiten un conjunto de instrucciones hasta que se cumple una condición determinada. 
+Son fundamentales en la programación y se utilizan en diversas aplicaciones, como el procesamiento de datos, la optimización y la simulación.
+
+
+Características de los algoritmos iterativos
+Repetición: La estructura principal es un bucle que permite ejecutar el mismo conjunto de instrucciones varias veces.
+
+
+
+Condición de parada: Se necesita una condición que, cuando se cumple, termina la iteración. Esto puede ser un valor específico o una condición lógica.
+
+
+
+Variables de control: A menudo, se utilizan variables que se actualizan en cada iteración para ayudar a evaluar la condición de parada.
