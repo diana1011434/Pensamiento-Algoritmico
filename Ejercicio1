@@ -1,0 +1,67 @@
+Algoritmo para calcular la suma de los primeros n números naturales
+ALGORITMO SumarNumerosNaturales
+    DEFINIR n COMO ENTERO
+    DEFINIR suma COMO ENTERO
+    suma ← 0
+
+    LEER n
+    DEFINIR i COMO ENTERO
+    i ← 1
+
+    MIENTRAS i ≤ n HACER
+        suma ← suma + i
+        i ← i + 1
+    FIN MIENTRAS
+
+    IMPRIMIR "La suma es:", suma
+FIN ALGORITMO
+
++---------------------+
+|   INICIO            |
++---------------------+
+          |
+          v
++---------------------+
+|   LEER n           |
++---------------------+
+          |
+          v
++---------------------+
+|   suma ← 0         |
++---------------------+
+          |
+          v
++---------------------+
+|   i ← 1            |
++---------------------+
+          |
+          v
++---------------------+
+|   i ≤ n ?          |
++---------+-----------+
+          | SÍ
+          v
++---------------------+
+|   suma ← suma + i   |
++---------------------+
+          |
+          v
++---------------------+
+|   i ← i + 1        |
++---------------------+
+          |
+          v
++---------------------+
+|   IR A i ≤ n ?     |
++---------+-----------+
+          | NO
+          v
++---------------------+
+|   IMPRIMIR suma     |
++---------------------+
+          |
+          v
++---------------------+
+|   FIN               |
++---------------------+
+
