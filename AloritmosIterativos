@@ -1,14 +1,70 @@
-Los algoritmos iterativos son aquellos que repiten un conjunto de instrucciones hasta que se cumple una condición determinada. 
-Son fundamentales en la programación y se utilizan en diversas aplicaciones, como el procesamiento de datos, la optimización y la simulación.
+Ejemplos de algoritmos en PSeudoCodigo
 
 
-Características de los algoritmos iterativos
-Repetición: La estructura principal es un bucle que permite ejecutar el mismo conjunto de instrucciones varias veces.
+Suma: Este es el ejemplo más simple. Muestra cómo cargar dos números de dos variables, calcular la suma de los mismos y mostrarla en pantalla.
+Conceptos: Uso de variables, operaciones aritméticas y entrada/salida.
+
+Mayores: Busca los dos mayores de un arreglo de N datos.
+Conceptos: Arreglos, comparación de valores y bucles.
+
+Coloquial: En este ejemplo se muestran algunas de las variantes que se pueden utilizar con el perfil de lenguaje Flexible para que el pseudocódigo se asemeje más al lenguaje coloquial.
+Conceptos: Flexibilidad en el lenguaje y claridad en la comunicación
+
+Subprocesos: Ejemplo básico que ilustra la sintaxis para declarar nuevas funciones en pseudocódigo.
+Conceptos: Funciones, modularidad y reutilización de código.
+
+AdivinaNumero: Sencillo juego en el que el usuario debe adivinar un número aleatorio
+Conceptos: Bucles y condiciones, interactividad con el usuario.
+
+Promedio: Ejemplo básico de uso de un acumulador y la estructura de control Para para calcular el promedio de un conjunto de valores.
+Conceptos: Acumuladores, bucles y cálculo de promedios.
+
+Triangulo: Este algoritmo determina a partir de las longitudes de tres lados de un triángulo si corresponden a un triángulo rectángulo (para utiliza la relación de Pitágoras, tomando los dos lados de menor longitud como catetos), y en caso afirmativo informa el área del mismo. Ejemplo de la estructura Si-Entonces y anidamiento.
+Conceptos: Condicionales, geometría básica y cálculo de área.
+
+OrdenaLista: Este ejemplo almacena una lista de nombres en un arreglo y luego los ordena alfabéticamente. El método de ordenamiento es relativamente simple. Para la entrada de datos se utiliza una estructura Mientras, sin saber a priori la cantidad de datos que se ingresarán
+Conceptos: Arreglos, algoritmos de ordenamiento y bucles.
+
+Modulo: Ejemplo trivial del uso del operador de módulo (MOD o %)
+Conceptos: Operador módulo y su aplicación.
+
+Menu: Ejemplo simple de menú de opciones, con las estructuras Repetir-Hasta Que y Segun
+Conceptos: Estructuras de control, interacción con el usuario y opciones múltiples.
+
+Digitos: Separa los dígitos de un número entero utilizando el operador módulo
+Conceptos: Operaciones matemáticas y manipulación de números.
+
+Resolvente: Utiliza la fórmula resolvente para determinar las raíces de una ecuación de segundo grado a partir de sus tres coeficientes, y las informa adecuadamente según su tipo (reales iguales, reales distintas, imaginarias)
+Conceptos: Matemáticas, condiciones y funciones.
+
+Primos: Calcula iterativamente los N primeros números primos
+Conceptos: Bucles, condiciones y algoritmos de búsqueda.
+
+Factorizacion: Ejemplo de algoritmo para descomponer un número en sus factores primos
+Conceptos: Divisibilidad y algoritmos de factorización.
+
+Cadenas: Muestra la utilización de las funciones de cadenas para contar las vocales de una frase
+Conceptos: Manipulación de cadenas y conteo.
+
+Para: En este ejemplo se recorre un arreglo utilizando las tres variantes de la estructura Para
+Conceptos: Bucles y control de iteraciones.
+
+Potencia: Ejemplo de una función recursiva para calcular una potencia
+Conceptos: Recursividad y matemáticas.
+
+Promedio2: Ejemplo de cómo crear subprocesos que reciban arreglos como argumento
+Conceptos: Funciones, argumentos y arreglos
+
+Misil: Ejemplo de animación con códigos ASCII y la instrucción Esperar
+Conceptos: Animación y salida en consola.
+
+Romanos: Muestra como convertir números enteros a notación romana utilizando arreglos
+Conceptos: Conversión de bases y representación de números.
 
 
+Hanoi: Implementa el conocido juego de las torres de Hanoi en pseudocódigo
+Conceptos: Recursividad y resolución de problemas.
 
-Condición de parada: Se necesita una condición que, cuando se cumple, termina la iteración. Esto puede ser un valor específico o una condición lógica.
+TaTeTi: Algoritmo para el juego del TaTeTi
+Conceptos: Estructuras de control y juegos.
 
-
-
-Variables de control: A menudo, se utilizan variables que se actualizan en cada iteración para ayudar a evaluar la condición de parada.
