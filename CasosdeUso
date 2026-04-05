@@ -1,0 +1,81 @@
+Caso 1 – Determinar mayor de tres números
+Problema: Se ingresan tres números. El programa debe indicar cuál es el mayor.
+Requerimientos:
+Usar variables para almacenar los números.
+Construir expresiones lógicas para comparar.
+Dibujar un árbol de decisión mostrando todas las comparaciones.
+Sugerencia: Usar if-else y construir un diagrama de flujo.
+
+Caso 2 – Verificar asistencia mínima para aprobar
+Problema: Un estudiante debe tener al menos 75% de asistencia para aprobar.
+Requerimientos:
+Usar datos y tipos de datos (número entero para asistencias).
+Usar expresiones lógico-aritméticas (asistencia >= 75).
+Indicar en diagrama de flujo si aprueba o no.
+Sugerencia: Construir un problema de decisión simple.
+
+
+Caso 3 – Calcular promedio de notas
+Problema: Se ingresan 4 notas de un estudiante y se calcula el promedio.
+Requerimientos:
+Usar expresiones aritméticas y variables.
+Instrucción repetitiva opcional si se quiere permitir más de 4 notas.
+Mostrar mensaje “Aprobado” si promedio ≥ 3.5 y “Reprobado” si < 3.5.
+Sugerencia: Crear diagrama de flujo y árbol de decisión para aprobación.
+
+
+Caso 4 – Tabla de multiplicar
+Problema: Mostrar la tabla de multiplicar de un número ingresado.
+Requerimientos:
+Usar instrucción repetitiva (for o while).
+Guardar resultados en variables.
+Evaluar con expresiones aritméticas.
+Sugerencia: Indicar pre-condición: número ≥ 1, post-condición: tabla mostrada correctamente.
+
+
+Caso 5 – Número par o impar
+Problema: Determinar si un número ingresado es par o impar.
+Requerimientos:
+Usar expresiones lógicas y aritméticas (num % 2 == 0).
+Usar problema de decisión simple.
+Dibujar árbol de decisión y diagrama de flujo.
+
+
+Caso 6 – Determinar categoría de edad
+Problema: Según la edad ingresada, clasificar a la persona en: Niño (<12), Adolescente (12–17), Adulto (18–64), Adulto mayor (≥65).
+Requerimientos:
+Usar expresiones lógicas compuestas.
+Construir árbol de decisión.
+Usar diagrama de flujo para representar todas las condiciones.
+
+
+Caso 7 – Calculadora básica
+Problema: Realizar operaciones básicas (suma, resta, multiplicación, división) entre dos números.
+Requerimientos:
+Usar datos, tipos de datos y expresiones aritméticas.
+Preguntar al usuario la operación a realizar (problema de decisión simple).
+Dibujar diagrama de flujo.
+
+
+Caso 8 – Conteo de números positivos y negativos
+Problema: Se ingresan 10 números. Contar cuántos son positivos y cuántos negativos.
+Requerimientos:
+Usar instrucción repetitiva (for) y variables contadoras.
+Evaluar con expresiones lógicas (num > 0).
+Mostrar resultado final (post-condición).
+
+
+Caso 9 – Conversión de temperatura
+Problema: Convertir grados Celsius a Fahrenheit y viceversa según elección del usuario.
+Requerimientos:
+Usar problema de decisión simple para seleccionar la conversión.
+Usar expresiones aritméticas para el cálculo.
+Dibujar diagrama de flujo que represente ambas opciones.
+
+
+Caso 10 – Juego de adivinanza
+Problema: El programa genera un número aleatorio entre 1 y 20. El usuario tiene 5 intentos para adivinarlo.
+Requerimientos:
+Usar instrucciones repetitivas para los intentos.
+Evaluar con expresiones lógicas si el número ingresado es mayor, menor o igual.
+Mostrar mensaje final (pre-condición: número válido, post-condición: juego terminado).
