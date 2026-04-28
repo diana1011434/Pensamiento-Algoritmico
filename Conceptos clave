@@ -1,0 +1,342 @@
+Recursión
+Es una técnica donde una función se llama a sí misma para resolver un problema.
+
+Siempre tiene:
+
+Caso base: donde se detiene
+Caso recursivo: donde se vuelve a llamar
+
+Ejemplo mental:
+
+factorial(5) = 5 * factorial(4)
+
+ Arreglos (vectores)
+
+Son estructuras que almacenan varios datos del mismo tipo en una sola variable.
+
+Ejemplo:
+
+[5, 8, 2, 10]
+
+Se accede por posición:
+
+arreglo[1], arreglo[2], etc.
+
+Matrices
+
+Son arreglos de dos dimensiones (filas y columnas).
+
+Ejemplo:
+
+1 2 3
+4 5 6
+7 8 9
+
+Se accede así:
+
+matriz[fila, columna]
+
+Ordenamiento de algoritmos
+
+Son técnicas para organizar datos (de menor a mayor o viceversa).
+
+Ejemplos:
+
+Burbuja
+Selección
+Inserción
+
+
+20 EJERCICIOS EN PSeInt
+ RECURSIVOS (1–8)
+1. Factorial
+Funcion f <- factorial(n)
+    Si n = 0 Entonces
+        f <- 1
+    Sino
+        f <- n * factorial(n-1)
+    FinSi
+FinFuncion
+
+2. Fibonacci
+Funcion f <- fib(n)
+    Si n <= 1 Entonces
+        f <- n
+    Sino
+        f <- fib(n-1) + fib(n-2)
+    FinSi
+FinFuncion
+
+3. Suma de números
+Funcion s <- suma(n)
+    Si n = 1 Entonces
+        s <- 1
+    Sino
+        s <- n + suma(n-1)
+    FinSi
+FinFuncion
+
+4. Potencia
+Funcion p <- potencia(b, e)
+    Si e = 0 Entonces
+        p <- 1
+    Sino
+        p <- b * potencia(b, e-1)
+    FinSi
+FinFuncion
+
+5. Contar dígitos
+Funcion c <- contar(n)
+    Si n < 10 Entonces
+        c <- 1
+    Sino
+        c <- 1 + contar(trunc(n/10))
+    FinSi
+FinFuncion
+
+6. Invertir número
+Funcion inv <- invertir(n)
+    Si n < 10 Entonces
+        inv <- n
+    Sino
+        inv <- (n MOD 10) * 10 + invertir(trunc(n/10))
+    FinSi
+FinFuncion
+
+7. Máximo común divisor
+Funcion m <- mcd(a,b)
+    Si b = 0 Entonces
+        m <- a
+    Sino
+        m <- mcd(b, a MOD b)
+    FinSi
+FinFuncion
+
+8. Suma de arreglo (recursivo)
+Funcion s <- sumaArr(arr, n)
+    Si n = 0 Entonces
+        s <- 0
+    Sino
+        s <- arr[n] + sumaArr(arr, n-1)
+    FinSi
+FinFuncion
+
+
+ARREGLOS (9–14)
+9. Leer y mostrar arreglo
+Dimension A[5]
+Para i <- 1 Hasta 5
+    Leer A[i]
+FinPara
+
+Para i <- 1 Hasta 5
+    Escribir A[i]
+FinPara
+10. Suma de arreglo
+s <- 0
+Para i <- 1 Hasta 5
+    s <- s + A[i]
+FinPara
+Escribir s
+
+11. Promedio
+prom <- s / 5
+Escribir prom
+
+12. Mayor elemento
+mayor <- A[1]
+Para i <- 2 Hasta 5
+    Si A[i] > mayor Entonces
+        mayor <- A[i]
+    FinSi
+FinPara
+
+13. Dibujar una flor con arreglo
+Dimension F[5]
+
+F[1] <- "  *  "
+F[2] <- " *** "
+F[3] <- "*****"
+F[4] <- " *** "
+F[5] <- "  *  "
+
+Para i <- 1 Hasta 5
+    Escribir F[i]
+FinPara
+
+14. Dibujar un barco con arreglo
+Dimension B[5]
+
+B[1] <- "   |   "
+B[2] <- "  /|\  "
+B[3] <- " /_|_\ "
+B[4] <- "   |   "
+B[5] <- "~~~~~~~"
+
+Para i <- 1 Hasta 5
+    Escribir B[i]
+FinPara
+
+
+15. Leer matriz 3x3
+Dimension M[3,3]
+
+Para i <- 1 Hasta 3
+    Para j <- 1 Hasta 3
+        Leer M[i,j]
+    FinPara
+FinPara
+16. Mostrar matriz
+Para i <- 1 Hasta 3
+    Para j <- 1 Hasta 3
+        Escribir M[i,j], " "
+    FinPara
+    Escribir ""
+FinPara
+
+17. Suma de matrices
+Dimension A[2,2], B[2,2], C[2,2]
+
+Para i <- 1 Hasta 2
+    Para j <- 1 Hasta 2
+        C[i,j] <- A[i,j] + B[i,j]
+    FinPara
+FinPara
+
+
+18. Burbuja
+Para i <- 1 Hasta 4
+    Para j <- 1 Hasta 4-i
+        Si A[j] > A[j+1] Entonces
+            temp <- A[j]
+            A[j] <- A[j+1]
+            A[j+1] <- temp
+        FinSi
+    FinPara
+FinPara
+
+19. Selección
+Para i <- 1 Hasta 4
+    min <- i
+    Para j <- i+1 Hasta 5
+        Si A[j] < A[min] Entonces
+            min <- j
+        FinSi
+    FinPara
+FinPara
+
+20. Inserción
+Para i <- 2 Hasta 5
+    aux <- A[i]
+    j <- i - 1
+
+    Mientras j > 0 Y A[j] > aux
+        A[j+1] <- A[j]
+        j <- j - 1
+    FinMientras
+
+    A[j+1] <- aux
+FinPara
+
+
+CASO INTEGRADOR: “ANÁLISIS INTELIGENTE DE DATOS”
+
+Un sistema debe:
+
+Leer un arreglo de 10 números
+Ordenarlos (burbuja)
+Calcular:
+Suma (recursiva)
+Promedio
+Llenar una matriz 3x3 con los primeros datos
+Mostrar la matriz
+Dibujar una figura (barco o flor)
+Calcular el factorial del número mayor (recursión)
+
+Proceso SistemaCompleto
+
+    Dimension A[10]
+    Dimension M[3,3]
+    Definir i, j, temp, suma, mayor, prom Como Entero
+
+    // 1. Leer arreglo
+    Para i <- 1 Hasta 10
+        Escribir "Ingrese número ", i
+        Leer A[i]
+    FinPara
+
+    // 2. Ordenamiento burbuja
+    Para i <- 1 Hasta 9
+        Para j <- 1 Hasta 9-i
+            Si A[j] > A[j+1] Entonces
+                temp <- A[j]
+                A[j] <- A[j+1]
+                A[j+1] <- temp
+            FinSi
+        FinPara
+    FinPara
+
+    Escribir "Arreglo ordenado:"
+    Para i <- 1 Hasta 10
+        Escribir A[i]
+    FinPara
+
+    // 3. Suma recursiva
+    suma <- sumaRec(A, 10)
+    prom <- suma / 10
+
+    Escribir "Suma: ", suma
+    Escribir "Promedio: ", prom
+
+    // 4. Llenar matriz con primeros 9 datos
+    k <- 1
+    Para i <- 1 Hasta 3
+        Para j <- 1 Hasta 3
+            M[i,j] <- A[k]
+            k <- k + 1
+        FinPara
+    FinPara
+
+    // 5. Mostrar matriz
+    Escribir "Matriz:"
+    Para i <- 1 Hasta 3
+        Para j <- 1 Hasta 3
+            Escribir Sin Saltar M[i,j], " "
+        FinPara
+        Escribir ""
+    FinPara
+
+    // 6. Dibujar barco
+    Escribir "Figura:"
+    Escribir "   |   "
+    Escribir "  /|\  "
+    Escribir " /_|_\ "
+    Escribir "   |   "
+    Escribir "~~~~~~~"
+
+    // 7. Factorial del mayor
+    mayor <- A[10]
+    Escribir "Mayor: ", mayor
+    Escribir "Factorial: ", factorial(mayor)
+
+FinProceso
+
+
+//  FUNCIÓN RECURSIVA SUMA
+Funcion s <- sumaRec(A, n)
+    Si n = 0 Entonces
+        s <- 0
+    Sino
+        s <- A[n] + sumaRec(A, n-1)
+    FinSi
+FinFuncion
+
+
+// FUNCIÓN RECURSIVA FACTORIAL
+Funcion f <- factorial(n)
+    Si n = 0 Entonces
+        f <- 1
+    Sino
+        f <- n * factorial(n-1)
+    FinSi
+FinFuncion
