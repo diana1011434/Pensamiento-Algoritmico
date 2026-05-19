@@ -1,0 +1,219 @@
+Proceso Metodos_De_Ordenamiento
+	
+    // =====================================================
+    // DECLARACIÓN DE VARIABLES
+    // =====================================================
+	
+    // opcion: guarda el método seleccionado por el usuario
+    // n: cantidad de elementos del arreglo
+    // i y j: variables de control para ciclos
+    // temp: variable temporal para intercambiar datos
+    // menor: guarda la posición del número menor
+	
+    Definir opcion, n, i, j, temp, menor Como Entero
+	
+    // Creamos un arreglo de máximo 100 posiciones
+    Definir arreglo Como Entero
+    Dimension arreglo[100]
+	
+	
+    // =====================================================
+    // MENÚ PRINCIPAL
+    // =====================================================
+	
+    Escribir "======================================="
+    Escribir "      METODOS DE ORDENAMIENTO"
+    Escribir "======================================="
+	
+    // Pedimos la cantidad de números
+    Escribir "Ingrese la cantidad de elementos:"
+    Leer n
+	
+	
+    // =====================================================
+    // LLENADO DEL ARREGLO
+    // =====================================================
+	
+    // Aquí el usuario ingresa los números
+    // que desea ordenar
+	
+    Para i <- 1 Hasta n Hacer
+		
+        Escribir "Ingrese el elemento ", i, ": "
+        Leer arreglo[i]
+		
+    FinPara
+	
+	
+    // =====================================================
+    // MENÚ DE OPCIONES
+    // =====================================================
+	
+    Escribir ""
+    Escribir "Seleccione el metodo de ordenamiento:"
+    Escribir "1. Metodo Burbuja"
+    Escribir "2. Metodo Seleccion"
+    Escribir "3. Metodo Insercion"
+	
+    Leer opcion
+	
+	
+    // =====================================================
+    // ESTRUCTURA SEGÚN
+    // Dependiendo de la opción elegida,
+    // se ejecuta el algoritmo correspondiente
+    // =====================================================
+	
+    Segun opcion Hacer
+		
+		
+			// #################################################
+			// MÉTODO BURBUJA
+			// #################################################
+		
+        1:
+			
+            // ------------------------------------------------
+            // El método burbuja compara dos números vecinos
+            // Si el primero es mayor que el segundo,
+            // se intercambian.
+            // ------------------------------------------------
+			
+            Para i <- 1 Hasta n-1 Hacer
+				
+                Para j <- 1 Hasta n-1 Hacer
+					
+                    // Comparar posiciones vecinas
+                    Si arreglo[j] > arreglo[j+1] Entonces
+						
+                        // Intercambio de valores
+						
+                        temp <- arreglo[j]
+                        arreglo[j] <- arreglo[j+1]
+                        arreglo[j+1] <- temp
+						
+                    FinSi
+					
+                FinPara
+				
+            FinPara
+			
+            Escribir ""
+            Escribir "ARREGLO ORDENADO POR BURBUJA:"
+			
+			
+			// #################################################
+			// MÉTODO SELECCIÓN
+			// #################################################
+			
+        2:
+			
+            // ------------------------------------------------
+            // Busca el número menor del arreglo
+            // y lo coloca en la posición correcta.
+            // ------------------------------------------------
+			
+            Para i <- 1 Hasta n-1 Hacer
+				
+                // Suponemos que el menor está en i
+                menor <- i
+				
+                // Buscar el número menor
+                Para j <- i+1 Hasta n Hacer
+					
+                    Si arreglo[j] < arreglo[menor] Entonces
+						
+                        menor <- j
+						
+                    FinSi
+					
+                FinPara
+				
+				
+                // Intercambiar posiciones
+				
+                temp <- arreglo[i]
+                arreglo[i] <- arreglo[menor]
+                arreglo[menor] <- temp
+				
+            FinPara
+			
+            Escribir ""
+            Escribir "ARREGLO ORDENADO POR SELECCION:"
+			
+			
+			// #################################################
+			// MÉTODO INSERCIÓN
+			// #################################################
+			
+        3:
+			
+            // ------------------------------------------------
+            // El método inserción toma un número
+            // y lo ubica en la posición correcta
+            // dentro de los elementos ya ordenados.
+            // ------------------------------------------------
+			
+            Definir aux, k Como Entero
+			
+            Para i <- 2 Hasta n Hacer
+				
+                // Guardamos el valor actual
+                aux <- arreglo[i]
+				
+                // Posición anterior
+                k <- i - 1
+				
+				
+                // Mientras el número anterior
+                // sea mayor que el actual,
+                // se desplazan los elementos
+				
+                Mientras k >= 1 Y arreglo[k] > aux Hacer
+					
+                    arreglo[k + 1] <- arreglo[k]
+					
+                    k <- k - 1
+					
+                FinMientras
+				
+				
+                // Insertamos el valor
+                // en la posición correcta
+				
+                arreglo[k + 1] <- aux
+				
+            FinPara
+			
+            Escribir ""
+            Escribir "ARREGLO ORDENADO POR INSERCION:"
+			
+			
+			// #################################################
+			// OPCIÓN INVÁLIDA
+			// #################################################
+			
+        De Otro Modo:
+			
+            Escribir "La opcion ingresada no es valida"
+			
+    FinSegun
+	
+	
+    // =====================================================
+    // MOSTRAR RESULTADOS
+    // =====================================================
+	
+    Escribir ""
+	
+    Para i <- 1 Hasta n Hacer
+		
+        Escribir Sin Saltar arreglo[i], " "
+		
+    FinPara
+	
+    Escribir ""
+    Escribir "Proceso finalizado correctamente."
+
+
+FinProceso
